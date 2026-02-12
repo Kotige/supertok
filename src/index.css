@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gold: #D0BD86;
+    --color-black: #000100;
+    --color-grey: #1A1A1A;
+    --color-off: #E6E6E6;
+
+    /* Gradiente */
+    --color-gold-start: #D7C593;
+    --color-gold-end: #EAE3C7;
+
+    --font-sans: "Raleway", system-ui, sans-serif;
+}
