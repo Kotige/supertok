@@ -92,7 +92,7 @@ export default function Navbar() {
                     {/* Mobile Button */}
                     <button
                         onClick={() => setOpen((prev) => !prev)}
-                        className="md:hidden fixed top-4 right-4 z-[60] text-off bg-black/70 backdrop-blur-md p-2 rounded-lg"
+                        className="md:hidden fixed top-4 right-4 z-[60] text-gold bg-black/70 backdrop-blur-md p-2 rounded-lg"
                         aria-label={open ? "Fechar menu" : "Abrir menu"}
                     >
                         {open ? <X size={28} /> : <Menu size={28} />}
