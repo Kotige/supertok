@@ -115,12 +115,12 @@ export default function Navbar() {
             <aside
                 className={`
                 md:hidden
-                fixed top-0 right-0 z-[50] h-screen w-1/2 bg-black
+                fixed top-12 right-0 z-[50] h-screen w-1/2 bg-black
                 transform transition-transform duration-300 ease-out
                 ${open ? "translate-x-0" : "translate-x-full"}
                 `}
             >
-                <ul className="flex flex-col gap-6 p-6 mt-16">
+                <ul className="flex flex-col gap-6 p-6 mt-8">
                     {navLinks.map((link) => {
                         const isActive = activeSection === link.id;
 
@@ -129,7 +129,7 @@ export default function Navbar() {
                                 <button
                                 onClick={() => handleScrollTo(link.id)}
                                 className={`
-                                    text-lg transition-colors text-left cursor-pointer
+                                    transition-colors text-left cursor-pointer
                                     ${isActive ? "text-gold" : "text-off hover:text-gold-start"}
                                 `}
                                 >
