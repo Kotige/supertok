@@ -5,7 +5,7 @@ import vlogo from "../../../assets/images/vlogo.png";
 
 export default function Hero() {
     return (
-        <section id="home" className="relative mt-8 h-[90vh] flex items-center">
+        <section id="home" className="relative mt-8 h-[100vh] flex items-center">
             <div className="bg-hero"/>
             <div className="hero-content w-full px-6 lg:px-16 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
                 {/* Left Top content */}
@@ -20,7 +20,7 @@ export default function Hero() {
                         className="hidden lg:flex max-w-[380px]"
                         alt="Logo" 
                     />
-                    <div className="flex flex-col items-center justify-center mx-6">
+                    <div className="flex flex-col items-center justify-center mx-6 pb-26">
                         <p className="text-off px-8 mb-6 lg:hidden">
                             Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>
                         </p>
@@ -31,6 +31,7 @@ export default function Hero() {
                             Conheça nossa linha de produtos
                         </a>
                     </div>
+                    <div className="mt-110 bg-about" />
                     
                 </div>
                 {/* Right bottom content */}

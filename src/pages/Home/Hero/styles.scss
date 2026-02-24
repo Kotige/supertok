@@ -2,5 +2,18 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+
+    .bg-about {
+        overflow: hidden;
+        position: absolute;
+        inset: 0;
+
+        background-image: url("../../../assets/images/about/bggold.png");
+        background-size: 180%;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        z-index: 1;
+    }
 }
 
