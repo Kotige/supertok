@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <header className="fixed top-0 left-0 w-full z-50 bg-black">
+            <header className="fixed top-0 left-0 w-full z-50 ">
                 <nav
                 className="
                     mx-auto max-w-7xl py-4 px-4
@@ -92,7 +92,7 @@ export default function Navbar() {
                     {/* Mobile Button */}
                     <button
                         onClick={() => setOpen((prev) => !prev)}
-                        className="md:hidden fixed top-4 right-4 z-[60] text-gold bg-black/70 backdrop-blur-md p-2 rounded-lg"
+                        className="md:hidden fixed top-0 right-0 z-[60] text-gold bg-black backdrop-blur-md p-2"
                         aria-label={open ? "Fechar menu" : "Abrir menu"}
                     >
                         {open ? <X size={28} /> : <Menu size={28} />}
@@ -115,12 +115,12 @@ export default function Navbar() {
             <aside
                 className={`
                 md:hidden
-                fixed top-12 right-0 z-[50] h-screen w-1/2 bg-black
+                fixed top-10 right-0 z-[50] h-screen w-1/2 bg-black
                 transform transition-transform duration-300 ease-out
                 ${open ? "translate-x-0" : "translate-x-full"}
                 `}
             >
-                <ul className="flex flex-col gap-6 p-6 mt-8">
+                <ul className="flex flex-col gap-6 p-6 mt-16">
                     {navLinks.map((link) => {
                         const isActive = activeSection === link.id;
 

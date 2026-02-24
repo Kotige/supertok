@@ -1,6 +1,7 @@
 import "./styles.scss";
 import models from "../../../assets/images/hero/models.png";
 import logo from "../../../assets/images/hlogo.png";
+import vlogo from "../../../assets/images/vlogo.png";
 
 export default function Hero() {
     return (
@@ -10,21 +11,27 @@ export default function Hero() {
                 {/* Left Top content */}
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
                     <img 
-                        src={logo}
-                        className="max-w-[320px] lg:max-w-[280px]"
+                        src={vlogo}
+                        className="max-w-[280px] px-8 -mt-4 mb-16 lg:hidden"
                         alt="Logo" 
                     />
-                    <div className="flex mx-6 md:hidden">
-                        <p className="text-off">
+                    <img 
+                        src={logo}
+                        className="hidden lg:flex max-w-[380px]"
+                        alt="Logo" 
+                    />
+                    <div className="flex flex-col items-center justify-center mx-6">
+                        <p className="text-off px-8 mb-6 lg:hidden">
                             Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>
                         </p>
+                        <a 
+                            href="#catalogo" 
+                            className="text-off text-sm font-semibold border px-2 py-1 uppercase"
+                        >
+                            Conheça nossa linha de produtos
+                        </a>
                     </div>
-                    <a 
-                        href="#catalogo" 
-                        className="text-off border px-2 py-1 uppercase"
-                    >
-                        Conheça nossa linha de produtos
-                    </a>
+                    
                 </div>
                 {/* Right bottom content */}
                 <div className="hidden md:flex flex-col items-center gap-6 max-w-md mx-auto lg:mx-0">

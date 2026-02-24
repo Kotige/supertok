@@ -8,9 +8,11 @@ import Contact from "./Contact";
 import Dealer from "./Dealer";
 import Footer from "../../components/Footer";
 
+import "./styles.scss";
+
 export default function Home () {
     return (
-        <main className="bg-black">
+        <main className="bg-hero">
             <Navbar />
             <Hero />
             <About />
