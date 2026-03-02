@@ -31,7 +31,7 @@ export default function Hero() {
                             Conheça nossa linha de produtos
                         </a>
                     </div>
-                    <div className="mt-110 bg-about" />
+                    <div className="mt-110 bg-about hidden" />
                     
                 </div>
                 {/* Right bottom content */}

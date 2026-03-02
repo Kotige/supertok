@@ -3,9 +3,9 @@ import "./styles.scss"
 
 export default function About() {
     return (
-        <section id="sobre" className="bg-black about-section">
+        <section className="bg-black about-section h-[160vh] flex items-center">
             <div className="about-bg lg:hidden"/>
-            <div className="block about-content lg:hidden w-full flex flex-col items-center">
+            <div id="sobre" className="block about-content lg:hidden w-full flex flex-col items-center">
                 <img
                     src={duo}
                     alt="Produtos Super Tok"
