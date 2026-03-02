@@ -5,14 +5,14 @@ export default function Carousel({products}) {
             overflow-x-auto
             pb-4
             snap-x snap-mandatory
-            mx-4 mt-16
+            mx-8 mt-16 mb-8
         ">
             {products.map((product) => (
                 <div key={product.id}
-                    className="min-w-[180px] max-w-[180px] min-h-[280px] flex-shrink-0 border border-off p-4 snap-start"
+                    className="min-w-[180px] max-w-[180px] min-h-[280px] max-h-[280px] flex-shrink-0 border border-off p-4 snap-start"
                     style={{background: `radial-gradient(circle at center, ${product.gradientInit} 10%, ${product.gradientEnd} 70%)`}}
                 >
-                    <div className="-mt-10 flex items-center justify-center mb-4">
+                    <div className="h-10 flex items-center justify-center mb-30">
                         <img 
                             src={product.image} 
                             alt={product.title}

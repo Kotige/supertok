@@ -61,6 +61,15 @@ export default function Products() {
                 cada tipo de cuidado
             </h2>
             <Carousel products={products} />
+
+            <div className="flex items-center justify-center">
+                    <a 
+                        href="#catalogo" 
+                        className="text-off text-sm font-semibold border px-2 py-1 uppercase"
+                    >
+                        Fale com um representante
+                    </a>
+            </div>
         </section>
     )
 }
