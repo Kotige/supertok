@@ -65,7 +65,7 @@ export default function Products() {
             <div className="flex items-center justify-center">
                     <a 
                         href="#catalogo" 
-                        className="text-off text-sm font-semibold border px-2 py-1 uppercase"
+                        className="text-off text-sm font-semibold border px-8 py-1 uppercase"
                     >
                         Fale com um representante
                     </a>
