@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <header className="fixed top-0 left-0 w-full z-50 ">
+            <header className="w-full z-50">
                 <nav
                 className="
                     mx-auto max-w-7xl py-4 px-4
@@ -92,7 +92,7 @@ export default function Navbar() {
                     {/* Mobile Button */}
                     <button
                         onClick={() => setOpen((prev) => !prev)}
-                        className="md:hidden fixed top-0 right-0 z-[60] text-gold bg-black backdrop-blur-md p-2"
+                        className="md:hidden z-[60] text-gold bg-black backdrop-blur-md p-2"
                         aria-label={open ? "Fechar menu" : "Abrir menu"}
                     >
                         {open ? <X size={28} /> : <Menu size={28} />}
@@ -140,9 +140,6 @@ export default function Navbar() {
                     })}
                 </ul>
             </aside>
-
-            {/* Espaçamento */}
-            <div className="h-[72px]" />
         </>
     );
 }
