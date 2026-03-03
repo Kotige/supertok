@@ -11,8 +11,8 @@ export default function Navbar() {
         { label: "Produtos", id: "produtos" },
         { label: "SAC", id: "sac" },
         { label: "Catálogo", id: "catalogo" },
-        { label: "Fale Conosco", id: "contato" },
         { label: "Seja um revendedor", id: "revendedor" },
+        { label: "Fale Conosco", id: "contato" }
     ];
 
     // Trava scroll quando menu mobile estiver aberto

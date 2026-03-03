@@ -19,8 +19,8 @@ export default function Home () {
             <Products />
             <Sac />
             <Catalog />
-            <Contact />
             <Dealer />
+            <Contact />
             <Footer />
         </main>
     )
