@@ -5,7 +5,7 @@ import vlogo from "../../../assets/images/vlogo.png";
 
 export default function Hero() {
     return (
-        <section id="home" className="relative mt-8 h-[100vh] flex items-center">
+        <section id="home" className="relative h-[100vh] flex items-center">
             <div className="bg-hero"/>
             <div className="hero-content w-full px-6 lg:px-16 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
                 {/* Left Top content */}

@@ -12,7 +12,7 @@ import "./styles.scss";
 
 export default function Home () {
     return (
-        <main className="bg-hero">
+        <main className="">
             <Navbar />
             <Hero />
             <About />

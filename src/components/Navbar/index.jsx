@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <header className="w-full z-50">
+            <header className="w-full z-50 bg-black">
                 <nav
                 className="
                     mx-auto max-w-7xl py-4 px-4
