@@ -1,5 +1,6 @@
 import "./styles.scss";
 import models from "../../../assets/images/hero/models.png";
+import elemento from "../../../assets/images/hero/element1.png";
 import logo from "../../../assets/images/hlogo.png";
 import vlogo from "../../../assets/images/vlogo.png";
 
@@ -7,26 +8,26 @@ export default function Hero() {
     return (
         <section id="home" className="relative h-[100vh] flex items-center">
             <div className="bg-hero"/>
-            <div className="hero-content w-full px-6 lg:px-16 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+            <div className="hero-content w-full px-6 lg:px-36 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
                 {/* Left Top content */}
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
+                <div className="flex flex-col items-center lg:justify-center lg:items-start text-center lg:text-left lg:mt-16 gap-6">
                     <img 
                         src={vlogo}
                         className="max-w-[280px] px-8 -mt-4 mb-16 lg:hidden"
                         alt="Logo" 
                     />
-                    <img 
-                        src={logo}
-                        className="hidden lg:flex max-w-[380px]"
-                        alt="Logo" 
-                    />
-                    <div className="flex flex-col items-center justify-center mx-6 pb-26">
+                    <div className="flex flex-col items-center justify-center mx-6 lg:mx-0 pb-26">
                         <p className="text-off px-8 mb-6 lg:hidden">
                             Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>
                         </p>
+                        <img 
+                            src={logo}
+                            className="hidden lg:flex max-w-[380px] my-12"
+                            alt="Logo" 
+                        />
                         <a 
                             href="#catalogo" 
-                            className="text-off text-sm font-semibold border px-2 py-1 uppercase"
+                            className="text-off text-sm font-semibold border px-2 lg:px-4 py-1 uppercase text-center hover:bg-gold/90 transition-colors duration-300 ease-in-out"
                         >
                             Conheça nossa linha de produtos
                         </a>
@@ -35,16 +36,23 @@ export default function Hero() {
                     
                 </div>
                 {/* Right bottom content */}
-                <div className="hidden md:flex flex-col items-center gap-6 max-w-md mx-auto lg:mx-0">
-                    <img 
-                        src={models}
-                        className="w-full max-w-[420px]"    
-                        alt="Modelos" 
-                    />
-                    <div className="text-off text-center text-sm lg:text-base">
+                <div className="hidden lg:flex flex-col items-center w-[100%] mx-auto lg:mx-0 overflow-visible pb-35">
+                    <div className="relative w-full flex justify-center">
+                        <img 
+                            src={models}
+                            className="w-full w-[80%] max-w-none h-auto"    
+                            alt="Modelos" 
+                        />
+                        <img 
+                            src={elemento} 
+                            alt="elemento decorativo"
+                            className="absolute block -bottom-50 left-100 -translate-x-1/2 w-[130%] max-w-none h-auto z-10" 
+                        />
+                    <div className="absolute -bottom-12 left-110 -translate-x-1/2 -rotate-9 -mx-22 z-20  text-black text-center text-sm lg:text-xl px-6">
                         <p>
-                            Produtos automotivos e para bike desenvolvidos para quem busca <span>resultado profissional!</span>
+                            Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>
                         </p>
+                    </div>
                     </div>
                 </div>
             </div>
