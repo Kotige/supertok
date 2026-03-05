@@ -29,8 +29,8 @@ export default function Sac() {
     };
 
     return (
-        <section id="sac" className="bg-black pt-8">
-            <h2 className="text-3xl text-off text-center font-bold mb-6">
+        <section id="sac" className="bg-black pt-8 lg:mt-16 lg:h-[100vh] flex flex-col items-center">
+            <h2 className="text-3xl lg:text-4xl text-off text-center font-bold mb-6 lg:mb-12">
                 <span className="text-gold">Dúvidas</span> frequentes
             </h2>
 
@@ -43,7 +43,7 @@ export default function Sac() {
                             onClick={() => handleToggle(index)}
                             className="w-full flex justify-between items-center p-5 text-left text-off hover:bg-off/5 transition"
                         >
-                            <span className={`text-sm ${openIndex === index ? "font-bold" : ""}`}>
+                            <span className={`text-sm lg:text-base ${openIndex === index ? "font-bold" : ""}`}>
                                 {faq.question}
                             </span>
 
@@ -71,13 +71,13 @@ export default function Sac() {
             <div className="mt-6 pb-16 flex flex-col gap-8 items-center justify-center">
                 <p className="text-off mx-8 text-center font-bold">
                     Caso sua dúvida não esteja aqui,
-                    <br />
+                    <br className="lg:hidden" />
                     entre em contato conosco.
                 </p>
 
                 <a 
                         href="#catalogo" 
-                        className="text-off text-sm font-semibold border px-8 py-1 uppercase"
+                        className="text-off text-sm font-semibold border px-8 py-1 uppercase hover:bg-gold/90 transition-colors duration-300 ease-in-out"
                     >
                         Fale com um representante
                 </a>
