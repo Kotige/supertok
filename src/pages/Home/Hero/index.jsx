@@ -43,11 +43,6 @@ export default function Hero() {
                             className="w-full w-[80%] max-w-none h-auto"    
                             alt="Modelos" 
                         />
-                        <img 
-                            src={elemento} 
-                            alt="elemento decorativo"
-                            className="absolute block -bottom-50 left-100 -translate-x-1/2 w-[130%] max-w-none h-auto z-10" 
-                        />
                     <div className="absolute -bottom-12 left-110 -translate-x-1/2 -rotate-9 -mx-22 z-20  text-black text-center text-sm lg:text-xl px-6">
                         <p>
                             Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>

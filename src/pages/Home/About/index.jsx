@@ -4,14 +4,14 @@ import "./styles.scss"
 
 export default function About() {
     return (
-        <section id="sobre" className="bg-black lg:bg-white about-section h-[160vh] lg:h-[100vh] flex items-center">
+        <section id="sobre" className="bg-black about-section h-[160vh] lg:h-[100vh] flex items-center">
             {/* Mobile design */}
             <div className="about-bg lg:hidden"/>
             <div className="block about-content lg:hidden w-full flex flex-col items-center">
                 <img
                     src={duo}
                     alt="Produtos Super Tok"
-                    className="w-[40vw] -mb-18 z-[0]"
+                    className="w-[50vw] -mb-18 z-[0]"
                 />
 
                 <div className="m-6 pt-14 bg-white text-black px-4 pb-6 text-center">
@@ -29,21 +29,10 @@ export default function About() {
                 </div>
             </div>
             {/* Desktop design */}
-            <div className="hidden lg:flex relative overflow-visible justify-center items-center">
-                {/* Elementos decorativos */}
-                <img 
-                    src={elemento} 
-                    alt="" 
-                    className="absolute -top-74 left-141 w-[1000px] max-w-none z-0"
-                />
-                <img 
-                    src={elemento} 
-                    alt="" 
-                    className="absolute -top-40 -left-90 w-[1000px] max-w-none z-0"
-                />
-                <div className="relative flex items-center mx-5">
-                    <div className="bg-white ms-26 py-16 px-12">
-                        <h2 className="text-5xl font-extrabold mb-6">
+            <div className="hidden lg:flex relative overflow-visible justify-center items-center">               
+                <div className="relative text-off flex items-center mx-5">
+                    <div className="ms-22 me-56 py-16 px-12">
+                        <h2 className="text-4xl font-extrabold mb-6">
                             Resultado visível,
                             <br />
                             <span className="text-gold">sem complicação</span>
@@ -56,7 +45,7 @@ export default function About() {
                         <img 
                             src={duo} 
                             alt="Produtos Super Tok" 
-                            className="w-[500px] w-max-none"
+                            className="w-[450px] w-max-none"
                         />
                     </div>
                 </div>
