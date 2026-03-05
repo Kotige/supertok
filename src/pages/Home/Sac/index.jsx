@@ -70,8 +70,7 @@ export default function Sac() {
 
             <div className="mt-6 pb-16 flex flex-col gap-8 items-center justify-center">
                 <p className="text-off mx-8 text-center font-bold">
-                    Caso sua dúvida não esteja aqui,
-                    <br className="lg:hidden" />
+                    Caso sua dúvida não esteja aqui, <br className="lg:hidden" />
                     entre em contato conosco.
                 </p>
 
