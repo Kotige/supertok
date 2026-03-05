@@ -1,12 +1,12 @@
 import "./styles.scss";
 import models from "../../../assets/images/hero/models.png";
-import elemento from "../../../assets/images/hero/element1.png";
+import element from "../../../assets/images/bggold.png";
 import logo from "../../../assets/images/hlogo.png";
 import vlogo from "../../../assets/images/vlogo.png";
 
 export default function Hero() {
     return (
-        <section id="home" className="relative h-[100vh] flex items-center">
+        <section id="home" className="relative h-[100vh] flex items-center overflow-y-visible lg:z-10">
             <div className="bg-hero"/>
             <div className="hero-content w-full px-6 lg:px-36 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
                 {/* Left Top content */}
@@ -36,18 +36,13 @@ export default function Hero() {
                     
                 </div>
                 {/* Right bottom content */}
-                <div className="hidden lg:flex flex-col items-center w-[100%] mx-auto lg:mx-0 overflow-visible pb-35">
+                <div className="hidden lg:flex flex-col items-center w-[100%] mx-auto lg:mx-0 overflow-visible pb-35 overflow-y-visible">
                     <div className="relative w-full flex justify-center">
                         <img 
                             src={models}
-                            className="w-full w-[80%] max-w-none h-auto"    
+                            className="w-full w-[80%] max-w-none h-auto relative translate-x-24"    
                             alt="Modelos" 
                         />
-                    <div className="absolute -bottom-12 left-110 -translate-x-1/2 -rotate-9 -mx-22 z-20  text-black text-center text-sm lg:text-xl px-6">
-                        <p>
-                            Produtos automotivos e para bike desenvolvidos para quem busca <span className="font-bold">resultado profissional!</span>
-                        </p>
-                    </div>
                     </div>
                 </div>
             </div>

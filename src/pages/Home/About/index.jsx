@@ -1,5 +1,4 @@
 import duo from "../../../assets/images/about/mockup-duo.png" 
-import elemento from "../../../assets/images/about/bggold.png"
 import "./styles.scss"
 
 export default function About() {
@@ -37,16 +36,9 @@ export default function About() {
                             <br />
                             <span className="text-gold">sem complicação</span>
                         </h2>
-                        <p className="text-justify  text-lg font-medium">
+                        <p className="text-justify  text-lg font-medium me-110">
                             A Super Tok é uma marca cearense criada para atender quem cuida do carro, da moto ou da bicicleta no dia a dia. Unimos eficiência, facilidade de uso e visual profissional em produtos que entregam performance real, tanto para o consumidor final quanto para o profissional.
                         </p>
-                    </div>
-                    <div className="flex-shrink-0 relative -top-0 -translate-x-15">
-                        <img 
-                            src={duo} 
-                            alt="Produtos Super Tok" 
-                            className="w-[450px] w-max-none"
-                        />
                     </div>
                 </div>
             </div>
