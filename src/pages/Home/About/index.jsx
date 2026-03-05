@@ -3,7 +3,7 @@ import "./styles.scss"
 
 export default function About() {
     return (
-        <section id="sobre" className="bg-black about-section h-[160vh] lg:h-[100vh] flex items-center">
+        <section id="sobre" className="bg-black about-section h-[160vh] lg:h-[100vh] flex items-center lg:mb-16">
             {/* Mobile design */}
             <div className="about-bg lg:hidden"/>
             <div className="block about-content lg:hidden w-full flex flex-col items-center">
@@ -30,7 +30,7 @@ export default function About() {
             {/* Desktop design */}
             <div className="hidden lg:flex relative overflow-visible justify-center items-center">               
                 <div className="relative text-off flex items-center mx-5">
-                    <div className="ms-22 me-56 py-16 px-12">
+                    <div className="ms-22 me-56 pt-16 pb-32 px-12">
                         <h2 className="text-4xl font-extrabold mb-6">
                             Resultado visível,
                             <br />

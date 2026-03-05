@@ -1,11 +1,12 @@
 export default function Carousel({products}) {
     return (
         <div className="
-            flex gap-4
+            flex gap-4 lg:gap-8
             overflow-x-auto
             pb-4
             snap-x snap-mandatory
-            mx-8 mt-16 mb-8
+            mx-8 mt-16 lg:mt-32 mb-8
+            lg:hidden
         ">
             {products.map((product) => (
                 <div key={product.id}

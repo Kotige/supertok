@@ -54,15 +54,16 @@ export default function Products() {
     ]
 
     return (
-        <section id="produtos" className="h-[100vh] bg-black">
-            <h2 className="text-3xl text-off font-bold text-center" >
+        <section id="produtos" className="lg:mx-40 lg:mt-5 lg:pt-5">
+            <h2 className="text-3xl lg:text-4xl text-off font-bold text-center lg:text-left lg:mb-10" >
                 <span className="text-gold">Soluções</span> para
                 <br /> 
                 cada tipo de cuidado
             </h2>
+            
             <Carousel products={products} />
 
-            <div className="flex items-center justify-center">
+            <div className="flex lg:hidden items-center justify-center">
                     <a 
                         href="#catalogo" 
                         className="text-off text-sm font-semibold border px-8 py-1 uppercase"
